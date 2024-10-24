@@ -1,0 +1,57 @@
+2024-10-23T18:47:34.258-03:00 ERROR 1572 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.org.springframework' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.org.springframework
+    Value: "INFO  # Controla o nï¿½vel de log para pacotes Spring"
+    Origin: class path resource [application.properties] - 26:35
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.INFO  # Controla o nï¿½vel de log para pacotes Spring)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+2024-10-23T18:49:26.063-03:00  INFO 6916 --- [restartedMain] com.moneySystem.MoneySystemApplication   : Starting MoneySystemApplication using Java 23 with PID 6916 (F:\portifolio 2025\Money System\target\classes started by samuel in F:\portifolio 2025\Money System)
+2024-10-23T18:49:26.065-03:00 DEBUG 6916 --- [restartedMain] com.moneySystem.MoneySystemApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-23T18:49:26.066-03:00  INFO 6916 --- [restartedMain] com.moneySystem.MoneySystemApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-23T18:49:26.152-03:00  INFO 6916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-23T18:49:26.152-03:00  INFO 6916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-23T18:49:27.215-03:00  INFO 6916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-23T18:49:27.306-03:00  INFO 6916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interface.
+2024-10-23T18:49:27.854-03:00  WARN 6916 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-10-23T18:49:27.867-03:00  INFO 6916 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-23T18:49:27.902-03:00 ERROR 6916 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'server.port' to java.lang.Integer:
+
+    Property: server.port
+    Value: "8080  # Define a porta em que o servidor deve rodar (padrï¿½o ï¿½ 8080)"
+    Origin: class path resource [application.properties] - 22:13
+    Reason: failed to convert java.lang.String to java.lang.Integer (caused by java.lang.NumberFormatException: For input string: "8080#Defineaportaemqueoservidordeverodar(padrï¿½oï¿½8080)")
+
+Action:
+
+Update your application's configuration
+
